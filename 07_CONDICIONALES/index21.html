@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombre = window.prompt("Escribe tu nombre:");
+        let ventas = parseInt(window.prompt("¿Cuánto has venido?"));
+        let extra
+
+        if(ventas>=500){
+            extra=(ventas/100)*5
+            window.alert(`Felicidades ${nombre}, tus ventas han sido ${ventas} Euros y recibes ${extra} Euros Extra!`)
+        }else{
+            window.alert(`Felicidades ${nombre}, tus ventas han sido ${ventas} Euros!`)
+        };
+    </script>
+</body>
+</html>

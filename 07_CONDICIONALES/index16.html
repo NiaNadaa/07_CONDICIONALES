@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let op = window.prompt("Escribe lo que quieres comprar: manzanas, naranjas o peras.");
+
+       /*  if(op==="manzanas"){
+            window.alert("Has escogido manzanas.")
+        }else if(op==="naranjas"){
+            window.alert("Has escogido naranjas.")
+        }else if(op==="peras"){
+            window.alert("Has escogido peras.")
+        }else{
+            window.alert("La opción es incorrecta.")
+        }; */
+
+        switch(op){
+            case "manzanas":
+            window.alert("Has escogido manzanas.")
+            break;
+            case "naranjas":
+            window.alert("Has escogido naranjas.")
+            break;
+            case "peras":
+            window.alert("Has escogido peras.")
+            break;
+            default:
+            window.alert("La opción es incorrecta.")
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let op1 = parseInt(window.prompt(`Estás en el bosque de noche y el camino que seguías se bifurca.
+        A dónde quieres ir?
+        1 - Derecha
+        2 - Izquierda`));
+        if(op1===1){
+            let op2 = parseInt(window.prompt(`Has decidido ir por el camino de la derecha. Tienes hambre y encuentras dos árboles frutales. Coge una fruta:
+        1 - Manzana
+        2 - Pera`));
+            if(op2===1){
+                window.alert("Has comido una manzana y ahora dormirás muy bien.")
+            }else if(op2===2){
+                window.alert("Vaya, la pera estaba envenenada y has muerto. Mala suerte, se acabó el juego")
+            }else{
+                window.alert("VNo has escogido una opción correcta")
+            }
+        }else if(op1===2){
+            let op3 = parseInt(window.prompt(`Has decidido ir por la izquierda. Tienes frío y encuentras dos posibles refugios. ¿Dónde vas a dormir?
+        1 - Caseta abandonada
+        2 - Hueco en un árbol`));
+            if(op3===1){
+                window.alert("En la caseta había un oso pardo durmiendo, lo has despertado, te ha atacado y has muerto. Mala suerte.")
+            }else if(op3===2){
+                window.alert("El hueco en el árbol es muy calentito. Dormirás bien esta noche.")
+            }else{
+                window.alert("VNo has escogido una opción correcta")
+            }
+        }else{
+            window.alert("VNo has escogido una opción correcta")
+        };
+
+    </script>
+</body>
+</html>

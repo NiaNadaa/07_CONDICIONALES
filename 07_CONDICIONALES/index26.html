@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let op = parseInt(window.prompt(`Escoge una opción: 
+        1 - Piedra
+        2 - Papel
+        3 - Tijera`)); 
+        let op2 = Math.abs(Math.floor((Math.random()*4)-1));
+        //console.log(op2);
+        if(op===1&&op2===1||op===2&&op2===2||op===3&&op2===3){
+            window.alert("Empate!")
+        }else if(op===1&&op2===3||op===2&&op2===1||op===3&&op2===2){
+            window.alert("Ganaste!") 
+        }else if(op2===1&&op===3||op2===2&&op===1||op2===3&&op===2){
+            window.alert("Perdiste!")
+        }else{
+            window.alert("No has instroducido una opción correcta")
+        };
+    </script>
+</body>
+</html>

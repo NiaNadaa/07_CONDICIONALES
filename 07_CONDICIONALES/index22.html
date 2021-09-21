@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       let edad = parseInt(window.prompt("Escribe tu edad"));
+       let nombre;
+       let apellido;
+       let ciudad;
+       let dias;
+       let coste;
+
+       if(edad<18){
+           window.alert("Lo sentimos, no puedes alquilar un coche")
+       }else{
+           nombre = window.prompt("Escribe tu nombre")
+           apellido = window.prompt("Escribe tu apelldio")
+           ciudad = window.prompt("Indica en qué ciudad quieres alquilar el coche")
+           dias = parseInt(window.prompt("¿Cuántos días quieres alquilar el coche?"))
+                if(coste<7){
+                    coste=dias*25
+                }else if(dias=7){
+                    coste=150
+                }
+
+        window.alert(`${nombre} ${apellido}, el alquiler del coche en ${ciudad} durante ${dias} días te costará ${coste}`)
+       }
+   </script> 
+</body>
+</html>

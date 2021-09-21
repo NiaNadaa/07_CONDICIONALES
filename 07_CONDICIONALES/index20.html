@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let temp = parseInt(window.prompt("Escribe la temperatura que hace"));
+        let conv = window.prompt("Escribe F si lo quieres en Farenheit o C si lo quieres en Centígrados");
+        switch(conv){
+            case "F":
+                window.alert(`Los ${temp} grados Centígrados son ${temp*9/5+32} grados Farenheit`)
+                break;
+            case "C":
+                window.alert(`Los ${temp} grados Farenheit son ${(temp-32)*5/9} grados Centígrados`)
+                break;
+            default:
+            window.alert(`No has introducido una opción válida`)
+        };
+    </script>  
+</body>
+</html>

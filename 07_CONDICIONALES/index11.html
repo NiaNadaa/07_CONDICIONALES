@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = window.prompt("Escribe un número entre 25 y 75");
+        let num2 = window.prompt("Escribe otro número entre 25 y 75");
+
+if(num1.substring(0,1)===num2.substring(0,1) || num1.substring(0,1)===num2.substring(1) || num1.substring(1)===num2.substring(0,1) || num1.substring(1)===num2.substring(1)){
+    console.log("Tus números comparten un dígito")
+};
+
+        /* num1.substring(0,1)||num1.substring(1)===num2.substring(0,1)||num2.substring(1)?console.log("Tus números comparten un dígito"):false; */
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    let exam1 = parseFloat(window.prompt("Escribe la nota del primer examen."));
+    let exam2 = parseFloat(window.prompt("Escribe la nota del segundo examen."));
+    let exam3 = parseFloat(window.prompt("Escribe la nota del tercer examen."));
+
+    let notaFinal = (exam1+exam2)/2+exam3;
+
+    if(exam1<5||exam2<5||exam3<5){
+        window.alert("Las notas introducidas no son correctas")
+    }else{
+            if(notaFinal===10){
+            window.alert("Matrícula")
+        }else if(notaFinal>=9&&notaFinal<10){
+            window.alert("Sobresaliente")
+        }else if(notaFinal>=7&&notaFinal<9){
+            window.alert("Notable")
+        }else if(notaFinal>=6&&notaFinal<7){
+            window.alert("Bien")
+        }else if(notaFinal>=5&&notaFinal<6){
+            window.alert("Suficiente")
+        }else if(notaFinal>0&&notaFinal<5){
+            window.alert("Suspenso")
+        };
+    };
+  </script> 
+</body>
+</html>
